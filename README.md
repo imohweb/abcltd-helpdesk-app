@@ -69,7 +69,7 @@ Use charts with Chart.js or Recharts in the React frontend.
 
 
 
-# Business Case for Help Desk Application (ABC Ltd - Fictitious Organization)
+# ABC Ltd Business Case for Developing a Helpdesk Application ( ABC Ltd is a Fictitious Organization)
 
 ## Problem Statement:
 ABC Ltd is experiencing delays in responding to customer inquiries, complaints, and service requests due to a fragmented support system.
