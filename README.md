@@ -67,7 +67,4 @@ Use charts with Chart.js or Recharts in the React frontend.
 # Step 14: Documentation
 - Generate README.md files for both backend and frontend folders. Include setup steps, API documentation, and deployment instructions. Add sample data for testing.
 
-# Step 15: Set GitHub Remote Repository
- - Create a remote git Repository with the name "abcdltd-helpdesk-app"
- - Add remote origin to the local repository
- - Push the code to the remote repository. 
+
