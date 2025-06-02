@@ -15,7 +15,7 @@ Create a Microsoft SQL Server schema for the help desk app. Include tables for:
 - Add drop statements at the top for in case there is an existing table
 - Use SQL syntax and include foreign key constraints. Add the SQL file to the backend folder.
 
-## Step 4:  Database Connection
+## Step 4: Database Connection
 - Create a database utility module in Node.js to connect to the Microsoft SQL Server database using the mssql library and environment variables for DB credentials.
 
 ## Step 5: User Authentication
