@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: mssql
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "YourStrong!Password"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - mssql_data:/var/opt/mssql
+
+  backend:
+    build:
+      context: ./backend
+    container_name: backend
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_USER=sa
+      - DB_PASSWORD=YourStrong!Password
+      - DB_SERVER=mssql
+      - DB_NAME=abchelpdeskdatabase
+      - JWT_SECRET=your_jwt_secret
+    depends_on:
+      - mssql
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  mssql_data:
