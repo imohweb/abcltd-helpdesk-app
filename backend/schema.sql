@@ -1,6 +1,8 @@
 -- Use the abchelpdeskdatabase
-USE abchelpdeskdatabase;
-
+USE "DBName";
+-- Ensure the database is created  
+CREATE DATABASE "DBName";
+-- Use the newly created database
 -- Drop existing tables if they exist
 DROP TABLE IF EXISTS ticket_status_history;
 DROP TABLE IF EXISTS comments;
